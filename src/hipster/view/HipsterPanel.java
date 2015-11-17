@@ -53,7 +53,9 @@ public class HipsterPanel extends JPanel
 				int red = (int) (Math.random() * 256);
 				int green = (int) (Math.random() * 256);
 				int blue = (int) (Math.random() *256);
-				
+				setBackground(new Color(red,blue,green));
+				String updatedTitle = phraseComboBox.getSelectedItem().toString();
+				baseController.getBaseFrame().setTitle(updatedTitle);
 			}
 		});
 	}
